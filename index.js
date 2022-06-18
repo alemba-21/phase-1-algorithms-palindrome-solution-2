@@ -1,9 +1,27 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  for (let i = 0; i<word.length/2; i++){
+    const j = word.length - 1 - i;
+    if (word[i] !== word[j]){
+      // if letters won't match return false
+      return false;
+    }
+}
+  // if reached at the middle and all letters match, return true
+  return true;
 }
 
 /* 
   Add your pseudocode here
+    If the first letter is sane as the last letter, and the second letter is the same as the second to last letter, etc. until we reach the middle, return true.
+  Iterarting from the beginning to the middle
+
+  check each letter corresponds with letter from the end
+
+  if all letters match 
+   return true 
+  else
+   return false
 */
 
 /*
